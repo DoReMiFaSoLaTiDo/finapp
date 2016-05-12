@@ -1,0 +1,10 @@
+<table>
+<% @stocks.each do |stock| %>
+<% @count += 1 %>
+<tr>
+  <td><%= @count %></td>
+  <td><%= stock['ticker'] %></td>
+  <td><%= stock['company'] %></td>
+</tr>
+<% end %>
+</table>
