@@ -1,0 +1,31 @@
+{
+  "name": "finapp",
+  "homepage": "https://github.com/DoReMiFaSoLaTiDo/finapp",
+  "authors": [
+    "Michael Fashola <michaelfashola@gmail.com>"
+  ],
+  "description": "financial analytics app",
+  "main": "",
+  "keywords": [
+    "finance",
+    "stock",
+    "market",
+    "data",
+    "analytics"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/assets/bower_compenents",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.5",
+    "d3": "^3.5.17",
+    "bootstrap": "^3.3.6"
+  }
+}
