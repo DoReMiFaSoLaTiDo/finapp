@@ -1,0 +1,24 @@
+<div class="navbar navbar-static-top navbar-inverse" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">FinVest</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav pull-right">
+          <li ng-class="{active: active=='home'}"><a ng-click="activetab='home'" ui-sref="/">Home</a></li>
+          <li ng-class="{active: active=='companies'}"><a ng-click="activetab='companies'" ui-sref="/companies">Companies</a></li>
+          <li ng-class="{active: active=='markets'}"><a ng-click="activetab='markets'" ui-sref="/markets">Markets</a></li>
+          <li ng-class="{active: active=='investment'}"><a ng-click="activetab='investment'" ui-sref="/investment">Investment Guide</a></li>
+          <li ng-class="{active: active=='about'}"><a ng-click="activetab='about'" ui-sref="/about">About</a></li>
+          <li ng-class="{active: active=='contact'}"><a ng-click="activetab='contact'" ui-sref="/contact">Contact</a></li>
+          <li ng-class="{active: active=='login'}"><a ng-click="activetab='login'" ui-sref="/login">Login</a></li>
+        </ul>
+      </div>
+  </div>
+</div>

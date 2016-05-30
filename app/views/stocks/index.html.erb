@@ -1,4 +1,23 @@
-<table>
+<div class="container-fluid">
+  <h3 ng:bind='pageTitle'></h3>
+  <div class="panel panel-success">
+    <div class="panel-heading">
+      <h1 ng-if="name">Hello, {{name}}</h1>
+    </div>
+    <div class="panel-body">
+      <form class="form-inline">
+        <div class="form-group">
+          <input class="form-control" type="text" placeholder="Enter your name" autofocus ng-model="name">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<table class="table table-responsive">
+  <th></th>
+  <th>Ticker</th>
+  <th>Company Name</th>
 <% @stocks.each do |stock| %>
 <% @count += 1 %>
 <tr>

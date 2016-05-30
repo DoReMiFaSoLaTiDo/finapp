@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html ng-app="myApp">
+<html>
 <head>
   <title>Finapp</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
-</head>
-<body>
 
-<%= yield %>
+</head>
+<body ng-app="finapp">
+  <%= yield %>
 
 </body>
 </html>
