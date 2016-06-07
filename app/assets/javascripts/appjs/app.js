@@ -1,6 +1,6 @@
-var finapp = angular.module('finapp', ['ui.router', 'templates']);
+angular.module('finapp', ['ui.router', 'templates'])
 
-finapp.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider){
+.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider){
   // default route
   $urlRouterProvider.otherwise('/');
 
@@ -14,6 +14,11 @@ finapp.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', func
       url: '/about',
       templateUrl: 'static_pages/about.html',
       controller: 'AboutCtrl'
+    })
+    .state('stocks', {
+      url: '/stocks',
+      templateUrl: 'stocks/index.html',
+      controller: 'StocksCtrl'
     });
 
     // enable HTML5 Mode for SEO
