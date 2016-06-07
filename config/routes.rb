@@ -4,9 +4,13 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'pages#home'
-
+    mount API => '/'
     root 'application#index'
     get "*page" => "application#index"
+
+
+    #mount GrapeSwaggerRails::Engine, at: "/documentation"
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

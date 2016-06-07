@@ -14,6 +14,16 @@ gem 'coffee-rails', '~> 4.1.0'
 # Use angular-rails-templates to serve angular pages
 gem 'angular-rails-templates'
 
+# Use grape for building APIs
+gem 'grape'
+gem 'rack-cors', :require => 'rack/cors'
+gem 'grape-active_model_serializers'
+gem 'grape-swagger-rails'
+gem 'grape-entity' #, '~> 0.4.0'
+gem 'rack-contrib' #, '~> 1.1.0'
+gem 'grape-swagger' #, '~> 0.7.2'
+gem 'hashie-forbidden_attributes'
+
 # Use MongoDB
 gem "mongoid", git: 'git://github.com/mongoid/mongoid.git'
 
